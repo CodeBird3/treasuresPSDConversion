@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/5c8009c014.js" crossorigin="anonymous"></script>
+    <!-- stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Sirin+Stencil&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Caitlin Klotz - Project 2</title>
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <div class="flexNav">
+            <p class="logo">Treasures</p>
+            <nav>
+                <!-- for the hamburger menu: i, inside a label, checkbox input -->
+                <label for="toggle">
+                    <i class="fas fa-bars"></i>
+                    <span>Menu</span>
+                </label>
+                <input type="checkbox" name="toggle" id="toggle">
+
+                <ul class="topNav">
+                    <!-- TODO test id placement again once styling is closer to complete -->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Worldly Treasures Worth the Peak</h1>
+        <a href="#">Shop now</a>
+    </div>
+</header>
+
+<main>
+    <!-- SECTION blog posts -->
+    <section class="blogPosts">
+        <div class="wrapper">
+            <div class="blog">
+                <h2 class="blog" id="blog">Latest blog posts</h2>
+            </div>
+            <h2>Our Journey to Greece and Morocco</h2>
+            <!-- NOTE there are arrows on either side of the p element -->
+            <!-- Does it make sense to put the two i's and the p inside of a flexbox? -->
+            <div class="flexBlog">
+                <button class="chevron"><i class="fas fa-chevron-left"></i></button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A laboriosam veritatis quisquam debitis, tempora sequi ipsa voluptates cumque facere aut dignissimos eaque placeat consequuntur culpa! Recusandae aut sunt vero odit accusantium!</p>
+                <button class="chevron"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <a href="#">Learn more</a>
+        </div>
+    </section>
+    <!-- !SECTION blog posts -->
+    <!-- SECTION latest adventures -->
+    <section class="latestAdventures">
+        <div class="wrapper">
+            <h2>Latest Adventures</h2>
+            <!-- NOTE Images are CIRCLES in a flex container -->
+            <!-- REVIEW are there links in this section? -->
+            <div class="adventureGallery">
+                <div class="adventureImages airBalloons">
+                    <img src="./Assets/turkey.jpg" alt="Hot air balloons in Turkey">
+                    <h3>Turkey</h3>
+                </div>
+                <div class="adventureImages">
+                    <img src="./Assets/morocco.jpg" alt="Road between buildings in Morocco">
+                    <h3>Morocco</h3>
+                </div>
+                <div class="adventureImages">
+                    <img src="./Assets/senegal.jpg" alt="Road between buildings in Senegal">
+                    <h3>Senegal</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- !SECTION latest adventures -->
+    <!-- SECTION shopify -->
+    <section class="shopify">
+        <div class="wrapper">
+            <!-- NOTE image has a box-shadow bottom right -->
+            <!-- NOTE image is on the left side of the flex container, while the h2, p, and button elements are in a column on the right -->
+            <!-- image is position:absolute; relative to the flexbox? -->
+            <div class="flexVase">
+                <div class="shopItem">
+                    <img src="./Assets/blue-vase.jpg" alt="Blue dragon vase">
+                </div>
+                <div class="flexShop">
+                    <h2>Beautiful Blue Dragon Vase</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis provident esse iure maiores illum voluptatem eaque accusamus, molestiae quisquam maxime quas itaque, non quos quod ad totam recusandae explicabo tempora! Laboriosam, quod unde dolore odit aliquam iure officia dolorem vel, veritatis reprehenderit in tempora esse, obcaecati possimus itaque suscipit quidem.</p>
+                    <a href="#" id="shop">Shop now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- !SECTION shopify -->
+    <!-- SECTION contact form -->
+    <section class="contactForm">
+        <div class="wrapper">
+            <h2 class="contact" id="contact">Contact Us</h2>
+            <!-- NOTE forms will be covered in module 13 -->
+            <!-- NOTE this form has two fields for name and email beside each other, and one for message underneath-->
+            <form action="#" method="POST">
+                <div class="name">
+                    <label for="name" class="sr-only">Name</label>
+                    <input 
+                        type="text" 
+                        name="name" 
+                        id="name"
+                        placeholder="Name"
+                    >
+                </div>
+
+                <div class="email">
+                    <label for="email" class="sr-only">Email</label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email"
+                        placeholder="Email"
+                    >
+                </div>
+
+                <div class="message">
+                    <label for="message" class="sr-only">Message</label>
+                    <!-- TODO define cols and rows -->
+                    <textarea 
+                        name="message" 
+                        id="message" 
+                        cols="30" 
+                        rows="10"
+                        placeholder="Message"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+    </section>
+    <!-- !SECTION contact form -->
+</main>
+
+<footer>
+    <div class="wrapper logo">Treasures</div>
+</footer>
+
+</body>
+</html>

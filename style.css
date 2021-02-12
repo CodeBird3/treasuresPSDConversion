@@ -1,0 +1,625 @@
+/* 'setup' snippet */
+html{
+    line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {
+    visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { 
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { 
+    position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+/* end of snippet */
+
+/* stripping styles */
+body, ul {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.wrapper {
+    width: 85%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* SECTION typographical elements */
+body {
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: 400; /* needs to be repeated because they're headings? */
+}
+
+h1, h2 {
+    font-family: 'Sirin Stencil', cursive;
+    color: #00476a;
+}
+
+h1 {
+    width: 50vw;
+    font-size: 7.6rem;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 4rem;
+    
+}
+
+h2.contact {
+    color: #ffffff;
+}
+
+h2.blog {
+    font-family: 'Lato', sans-serif;
+    color: #0e191e;
+    font-size: 3rem;
+    text-transform: none;
+}
+
+div.blog {
+    position: relative;
+    width: 300px;
+    margin: auto;
+}
+
+div.blog::after {
+    content: '';
+    background: #00c6ff;
+    position: absolute;
+    bottom: -10px;
+    left: 100px;
+    height: 3px;
+    width: 100px;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: #222428;
+    position: absolute;
+    bottom: 15px;
+}
+
+.logo {
+    font-family: 'Sirin Stencil', cursive;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+a, section p {
+    font-family: 'Lato', sans-serif;
+}
+
+section p {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+header .logo, section p {
+    color: #0e191e;
+}
+
+footer .logo, a {
+    color: #ffffff;
+}
+
+a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    background: #00476a;
+    padding: 10px 20px;
+}
+
+header nav a {
+    background: none;
+    display: inline;
+    margin: 0;
+    color: #00476a;
+}
+
+nav label, nav input {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    color: #00476a;
+    display: none;
+}
+
+form input, form textarea, button[type="submit"] {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+form input, form textarea {
+    border: 2px solid #00c6ff;
+    background: transparent;
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+::placeholder {
+    color: #ffffff;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background: #00476a;
+    border: 0;
+    margin: 20px auto;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background: #00c6ff;
+    color: #00476a;
+}
+/* !SECTION typographical elements */
+
+/* SECTION header */
+/* TODO 
+    create a hover/focus state for anchor tags/submit button, if time
+    create click states for anchor tags and buttons?
+*/
+header {
+    background-image: url(./Assets/header-image.jpg);
+    background-size: cover;
+    height: 90vh;
+}
+
+/* flexbox with .logo and navbar */
+.flexNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* flexbox for navbar */
+.topNav {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover, a:focus {
+    background: #b0e5ed;
+    color: #00476a;
+}
+
+header nav a:hover,
+header nav a:focus-within {
+    background: none;
+    border-bottom: 2px solid #00c6ff;
+}
+/* !SECTION header */
+
+/* SECTION blog posts */
+/* TODO
+    give buttons a background colour for when they are being clicked
+    the chevrons could sit a little higher, if we're being picky
+*/
+
+.blog + h2 {
+    width: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.blogPosts {
+    text-align: center;
+    margin: 100px auto;
+}
+.blogPosts a {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* style chevrons */
+.chevron {
+    border: none;
+    background: none;
+    font-size: 50px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+/* TODO clicking a button should do something */
+.chevron:hover, .chevron:focus {
+    background: #eeeeee;
+}
+
+/* flexbox for buttons*2 and p */
+.flexBlog {
+    display: flex;
+}
+/* !SECTION blog posts */
+
+/* SECTION latest adventures */
+.latestAdventures {
+    background: #e5f8fc;
+    /* padding: 100px auto; */
+    text-align: center;
+    padding-bottom: 300px;
+} 
+.latestAdventures h2 {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+img {
+    width: 100%;
+    /* auto for the vase, use 100% on the circles below */
+    height: auto;
+}
+
+/* ----- Strong nod to our final code along "Sick site, bro" ----- */
+.adventureGallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adventureImages {
+    width: calc((100vw/3) - 20px);
+    /* use vw so the height can be the same as the width */
+    height: calc((100vw/3) - 20px);
+    /* values before the height starts to distort (500px); values used in code along give better circles */
+    max-width: 320px;
+    max-height: 320px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.adventureImages:last-of-type {
+    margin-right: 0;
+}
+
+.adventureImages img {
+    border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.adventureImages h3 {
+    position: absolute;
+    left: -20px;
+    right: 50%;
+    padding: 10px 0;
+    text-align: center;
+}
+/* ----- Strong nod to our final code along "Sick site, bro" (end) ----- */
+/* !SECTION latest adventures */
+
+/* SECTION shopify */
+.shopify {
+    margin: 100px auto 300px;
+}
+
+/* flexbox for .shopItem and .flexShop */
+.flexVase {
+    display: flex;
+}
+
+.shopItem, .flexShop {
+    width: 50%;
+}
+
+.flexShop {
+    margin-left: 45px;
+}
+
+.flexShop p {
+    margin-bottom: 50px;
+    line-height: 3rem;
+}
+
+.shopItem {
+    position: relative;
+}
+
+.shopItem img {
+    position: absolute;
+    bottom: 0;
+    max-width: 500px;
+    box-shadow:/* x */ 40px /* y */ 40px /* blur radius */ #b0e5ed;
+}
+/* !SECTION shopify */
+
+/* SECTION contact form */
+.contactForm {
+    background: #222428;
+    text-align: center;
+    padding: 100px 0;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form button {
+    cursor: pointer;
+}
+
+.name, .email {
+    width: calc(50% - 10px);
+}
+.message {
+    width: 100%;
+}
+/* !SECTION contact form */
+
+/* SECTION footer */
+footer {
+    background: #0e191e;
+    text-align: center;
+    padding: 20px;
+}
+/* !SECTION footer */
+
+/* SECTION media queries */
+@media (max-width: 1390px) {
+    /* HEADER SIZING */
+    h1 {
+        font-size: 6.5rem;
+    }
+}
+
+@media (max-width: 1170px) {
+    /* HEADER SIZING */
+    h1 {
+        font-size: 4.8rem;
+        line-height: 60px;
+    }
+
+    /* ADVENTURE SIZING */
+    .latestAdventures {
+        padding-bottom: 270px;
+    }
+    
+    .adventureGallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .adventureImages {
+        margin: 20px 0;
+        width: 100%;
+        height: 100%;
+        max-width: 60vw;
+        max-height: 60vw;
+    }
+    
+    /* Turkey photo of hot air balloons */
+    .airBalloons {
+        height: 753px;
+    }
+    
+    .adventureImages h3 {
+        left: 20%;
+        right: 20%;
+        padding: 15px;
+        bottom: -30px;
+    }
+
+    /* SHOPIFY SIZING */
+    .shopify {
+        margin: 450px auto 100px;
+    }
+    
+    .flexVase {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .flexShop {
+        width: 75%;
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 884px) {
+    /* HEADER SIZING */
+    h1 {
+        width: 55vw;
+        font-size: 4rem;
+        line-height: 50px;
+    }
+
+    header nav a {
+        font-size: 2rem;
+    }
+
+    /* BLOG SIZING */
+    h2.blog {
+        font-size: 2rem;
+    }
+    
+    div.blog::after {
+        bottom: -15px;
+        left: 110px;
+        width: 85px;
+    }
+    
+    .blog + h2 {
+        width: 255px;
+        font-size: 2.6rem;
+        margin: 35px auto 10px;
+    }
+    
+    /* flexbox for buttons*2 and p */
+    .flexBlog {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .flexBlog p {
+        width: 567px;
+        margin: auto 50px;
+    }
+
+    .chevron {
+        order: 1;
+        margin: 20px;
+    }
+
+    /* ADVENTURE SIZING */
+    .adventureImages h3 {
+        left: 15%;
+        right: 15%;
+    }
+
+    /* SHOPIFY SIZING */ 
+    .shopItem {
+        width: 75%;
+    }
+    
+    .flexShop {
+        margin-top: 75px;
+    }
+
+    /* CONTACT SIZING */
+    .contactForm {
+        padding: 10px 0 50px;
+    }
+    
+    .name, .email {
+        width: 100%;
+    }
+    
+    button[type="submit"] {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width: 667px) {
+    /* HEADER SIZING */
+    header {
+        height: 75vh;
+        /* the background won't look the same as the style guide because the image has been cropped to just underneath the bell, and there is no mobile header image */
+        background-position-x: 1000px;
+    }
+
+    header .logo {
+        font-size: 2.5rem;
+    }
+    
+    .flexNav {
+        align-items: flex-start;
+    }
+    
+    .topNav {
+        flex-direction: column;
+    }
+    
+    nav label, nav input {
+        display: inline;
+    }
+    
+    nav input {
+        visibility: hidden;
+    }
+    
+    /* ----- Strong nod to our final code along "Sick site, bro" (start) ----- */
+    nav label {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+        background-color: #f2dcd944;
+    }
+    
+    .topNav {
+        background: #e5f8fc;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -75%;
+        width: 75%;
+        transition: all 1s;
+        z-index: 10;
+    }
+    
+    header nav a {
+        border-bottom: 2px solid #00476a;
+        display: block;
+        padding: 20px;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    header input:checked + .topNav {
+        left: 0;
+    }
+    
+    /* ----- Strong nod to our final code along "Sick site, bro" (end) ----- */
+    
+    a {
+        font-size: 2rem;
+        padding: 10px 30px;
+    }
+
+    /* BLOG SIZING */
+    div.blog {
+        width: 150px;
+    }
+
+    div.blog::after {
+        left: 35px;
+    }
+
+    .blogPosts {
+        margin-bottom: 60px;
+    }
+    
+    .chevron {
+        font-size: 40px;
+        margin: 20px 10px;
+    }
+
+    /* ADVENTURE SIZING */
+    .adventureImages h3 {
+        font-size: 1.8rem;
+    }
+
+    /* SHOPIFY SIZING */
+    .flexShop {
+        margin-top: 50px;
+    }
+
+    .shopify {
+        margin: 190px auto 50px;
+    }
+    
+    .shopItem {
+        width: 60%;
+    }
+    
+    .shopItem img {
+        box-shadow: 25px 25px #b0e5ed;
+    }
+    
+    .flexShop {
+        width: 90%;
+        margin-top: 0;
+    }
+}
+/* !SECTION media queries */
